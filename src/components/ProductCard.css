@@ -1,0 +1,30 @@
+* Perfect centering for loading screen */ .loading-screen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+}
+.product-card {
+  width: 100%;
+  max-width: 250px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+.loading-screen {
+  background-color: #f8f9fa;
+}

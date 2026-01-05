@@ -1,0 +1,51 @@
+.product-details-page {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Product image section */
+.product-image-wrapper {
+  border-radius: 15px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.product-image-wrapper:hover {
+  transform: scale(1.02);
+}
+
+.product-image {
+  max-height: 400px;
+  object-fit: contain;
+}
+
+/* Details text styling */
+h2 {
+  line-height: 1.4;
+}
+
+.text-secondary {
+  font-size: 1rem;
+  color: #555 !important;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  transform: scale(1.05);
+}
+.loader-wrapper {
+  display: flex;
+  justify-content: center; /* توسيط أفقي */
+  align-items: center;     /* توسيط عمودي */
+  min-height: 60vh;        /* ارتفاع كافي لتوسيطه بين Navbar و Footer */
+}
+
