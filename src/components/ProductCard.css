@@ -1,4 +1,4 @@
-* Perfect centering for loading screen */ .loading-screen {
+.loading-screen {
   width: 100vw;
   height: 100vh;
   display: flex;
