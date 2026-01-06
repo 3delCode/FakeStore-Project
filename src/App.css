@@ -1,3 +1,13 @@
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container,
+.container-fluid {
+  max-width: 100%;
+}
 .nav-link {
   text-decoration: none;
   font-family: "Poppins";
@@ -50,7 +60,7 @@
 
 .page.dark .text-muted,
 .page.dark .text-secondary {
-  color: #d1d1d1 !important; 
+  color: #d1d1d1 !important;
 }
 
 .page.dark p,

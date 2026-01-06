@@ -56,23 +56,31 @@ function AddProductToCart() {
   }
 
   return (
-    <div className="container py-5">
+    <div className="container-fluid px-3 py-5">
       <h2 className="mb-4">Your Cart</h2>
 
       {cart.map((item) => (
         <div
           key={item.id}
-          className="d-flex align-items-center justify-content-between my-3 p-3 shadow-sm rounded"
+          className="row align-items-center my-4 g-3"
         >
-          <div className="d-flex align-items-center">
-            <img src={item.image} alt={item.title} width="80" />
-            <div className="ms-3">
-              <h6>{item.title}</h6>
-              <p>${item.price}</p>
-            </div>
+          <div className="col-4 col-sm-3 col-md-2 text-center">
+            <img
+              src={item.image}
+              className="img-fluid"
+              style={{ maxHeight: "80px", objectFit: "contain" }}
+              alt={item.title}
+            />
+          </div>
+          <div className="col-8 col-sm-6 col-md-7">
+            <h6 className="fw-bold mb-1">{item.title}</h6>
+            <p className="fw-bold mb-2">
+              ${item.price} × {item.qty}
+            </p>
           </div>
 
-          <div className="d-flex align-items-center gap-2">
+
+          <div className="col-12 col-sm-3 col-md-3 text-sm-end">
             <button
               className="btn btn-outline-secondary"
               onClick={() => decreaseQty(item.id)}

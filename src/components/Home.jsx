@@ -26,9 +26,9 @@ const Home = () => {
     return (
         <>
             <section className="py-5">
-                <div className="container">
+                <div className="container-fluid px-3">
                     <div className="row align-items-center">
-                        <div className="col-md-6" data-aos="fade-right">
+                        <div className="col-12 col-md-6" data-aos="fade-right">
                             <h1 className="fw-bold">
                                 Discover Fake-Store <span className="text-primary">Products</span>
                             </h1>
@@ -41,7 +41,7 @@ const Home = () => {
                             </Link>
                         </div>
 
-                        <div className="col-md-6 text-center" data-aos="fade-left">
+                        <div className="col-12 col-md-6 text-center" data-aos="fade-left">
                             <img
                                 src="https://cdn-icons-png.flaticon.com/512/891/891419.png"
                                 alt="shopping"
@@ -53,17 +53,17 @@ const Home = () => {
                 </div>
             </section>
             <section className="py-5">
-                <div className="container">
+                <div className="container-fluid px-3">
                     <div className="row text-center g-4">
-                        <div className="col-md-4" data-aos="zoom-in">
+                        <div className="col-12 col-md-4" data-aos="zoom-in">
                             <h5 className="fw-bold">Fast Delivery 🚀</h5>
                             <p className="text-muted">Get your products delivered quickly and safely.</p>
                         </div>
-                        <div className="col-md-4" data-aos="zoom-in" data-aos-delay="150">
+                        <div className="col-12 col-md-4" data-aos="zoom-in" data-aos-delay="150">
                             <h5 className="fw-bold">Best Quality ⭐</h5>
                             <p className="text-muted">We provide only the best quality products.</p>
                         </div>
-                        <div className="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+                        <div className="col-12 col-md-4" data-aos="zoom-in" data-aos-delay="300">
                             <h5 className="fw-bold">Secure Payment 🔒</h5>
                             <p className="text-muted">Your payments are safe with our secure system.</p>
                         </div>
@@ -71,14 +71,14 @@ const Home = () => {
                 </div>
             </section>
             <section className="py-5" data-aos='fade-up'>
-                <div className="container">
+                <div className="container-fluid px-3">
                     <div className="row g-4">
                         {limitedProducts.map((product) => (
-                            <div className="col-md-3" key={product.id}>
+                            <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={product.id}>
                                 <div className="card h-100 shadow-sm">
                                     <img
                                         src={product.image}
-                                        className="card-img-top"
+                                        className="card-img-top img-fluid"
                                         alt={product.title}
                                         style={{ height: "200px", objectFit: "contain" }}
                                     />
